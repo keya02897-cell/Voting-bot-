@@ -40,7 +40,6 @@ import json
 import re
 import time
 from collections import defaultdict, deque
-import os
 import asyncio
 from datetime import datetime, timezone
 from telegram import (
@@ -60,9 +59,11 @@ from telegram.ext import (
     ContextTypes
 )
 from telegram.request import HTTPXRequest
+import os
 
+TOKEN = os.getenv("BOT_TOKEN", "").strip()
 # ================= CONFIG ================= #
-TOKEN = os.getenv("TOKEN", "")
+
 
 BOT_USERNAME = "@pulkitvoting_bot"
 OWNER_ID = 8925611507
