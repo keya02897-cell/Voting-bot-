@@ -62,7 +62,7 @@ from telegram.ext import (
 from telegram.request import HTTPXRequest
 
 # ================= CONFIG ================= #
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+TOKEN = os.getenv("TOKEN", "")
 
 BOT_USERNAME = "@pulkitvoting_bot"
 OWNER_ID = 8925611507
